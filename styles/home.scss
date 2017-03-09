@@ -39,10 +39,20 @@ body {
   display: flex;
   padding: 5px;
 }
+.message-img {
+  white-space: pre-line;
+  max-width: 60%;
+  overflow: hidden;
+  margin: 5px;
+  padding: 0 10px;
+}
 
 .message.system {
   font-style: italic;
-  padding: 5px 20px;
+  color: darkgray;
+  .message-username {
+    display: none;
+  }
 }
 
 .message-content,
@@ -82,4 +92,12 @@ body {
   line-height: 60px;
   padding: 0 10px;
   text-decoration: none;
+}
+
+.navbar-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  float: right;
+  line-height: 3;
 }
